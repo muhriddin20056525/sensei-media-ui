@@ -173,6 +173,104 @@ section {
   color: var(--black);
 }
 
+/* ================================== SERVICES ================================== */
+
+.services-list {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.services-content {
+  height: 37.8rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 2.1rem;
+  position: relative;
+}
+
+.services-header {
+  padding: 1.1rem 5.3rem;
+  background-color: var(--darkcyan);
+}
+
+.services-header h4 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+}
+
+.services-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2.1rem;
+  padding-left: 1.6rem;
+}
+
+.services-feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.services-feature i {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--gradient);
+}
+
+.services-feature span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+.services-price {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.services-price h2 {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 0.8;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-price h2 span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--black);
+  background: none;
+  background-clip: initial;
+  -webkit-background-clip: initial;
+}
+
+.services-item .btn {
+  display: block;
+  margin: 0px auto;
+}
+
 /* ================================== RESPONSIVE ================================== */
 @media (max-width: 992px) {
   /* ================================== HEADER ================================== */
