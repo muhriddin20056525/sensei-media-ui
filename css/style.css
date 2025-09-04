@@ -348,15 +348,16 @@ section {
 /* ================================== WORKS ================================== */
 
 .works-carousel-list {
-  display: grid;
+  display: flex;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(54rem, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(54rem, 1fr)); */
   align-items: center;
   gap: 3rem;
   margin-top: 4.1rem;
 }
 
 .works-carousel-item {
+  max-width: 90%;
   height: 51.8rem;
   border-radius: 1.5rem;
   padding: 2.3rem;
@@ -377,6 +378,7 @@ section {
 }
 
 .works-carousel-middle {
+  width: 100%;
   position: absolute;
   left: 0;
   right: 0;
@@ -428,6 +430,67 @@ section {
   align-items: center;
 }
 
+/* ================================== FOOTER ================================== */
+
+.footer {
+  padding: 5rem 2rem;
+  background-color: var(--white);
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-col {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.footer-col:nth-child(1) a {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--black);
+}
+
+.footer-col button {
+  margin-top: 2.2rem;
+}
+
+.footer-col h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 1.3rem;
+}
+
+.footer-item a {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2;
+  color: var(--black);
+}
+
+/* ================================== COPYRIGHT ================================== */
+.copyright {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.5;
+  color: var(--white);
+  background-color: #2d2d2d;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
 /* ================================== RESPONSIVE ================================== */
 @media (max-width: 992px) {
   /* ================================== HEADER ================================== */
@@ -476,6 +539,12 @@ section {
     padding: 0;
     border: none;
   }
+
+  /* ================================== WORKS ================================== */
+
+  .works-carousel-list {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 600px) {
@@ -499,5 +568,24 @@ section {
 
   .stats-item {
     margin: 0px auto;
+  }
+
+  /* ================================== WORKS ================================== */
+
+  .works-carousel-item {
+    height: fit-content;
+  }
+
+  .works-carousel-middle {
+    display: none;
+  }
+
+  .works-carousel-bottom {
+    position: relative;
+  }
+
+  .works-carousel-bottom-partners {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
