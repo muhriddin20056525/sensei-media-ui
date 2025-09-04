@@ -345,6 +345,89 @@ section {
   margin: 2.4rem 0;
 }
 
+/* ================================== WORKS ================================== */
+
+.works-carousel-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(54rem, 1fr));
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4.1rem;
+}
+
+.works-carousel-item {
+  height: 51.8rem;
+  border-radius: 1.5rem;
+  padding: 2.3rem;
+  background-color: var(--white);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.works-carousel-top {
+  margin-bottom: 2.4rem;
+}
+
+.works-carousel-top p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--black);
+}
+
+.works-carousel-middle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #f3f1fe;
+  padding: 2.1rem 1rem 2.1rem 2.3rem;
+  top: 22.7rem;
+}
+
+.works-carousel-middle h3,
+.works-carousel-bottom h3 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.works-carousel-middle-list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.works-carousel-middle-list h4,
+.works-carousel-middle-list p {
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: var(--black);
+}
+
+.works-carousel-middle-list p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
+}
+
+.works-carousel-bottom {
+  padding-top: 2.4rem;
+  height: 13.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.works-carousel-bottom-partners {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
 /* ================================== RESPONSIVE ================================== */
 @media (max-width: 992px) {
   /* ================================== HEADER ================================== */
